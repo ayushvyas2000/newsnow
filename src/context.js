@@ -15,7 +15,7 @@ const AppProvider=({children})=>{
             url:`${url}${category}`,
             headers: {
               'x-rapidapi-host': 'current-news.p.rapidapi.com',
-              'x-rapidapi-key': '0953c1c10dmshfbc253ef2aac7ddp183a78jsna92ce5961729'
+              'x-rapidapi-key': process.env.REACT_APP_API_KEY
             }
           };
           setLoading(true)
