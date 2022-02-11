@@ -1,0 +1,14 @@
+.pagination{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+button{
+    opacity: 60%;
+    background: none;
+    border: 0;
+    &:hover{
+        opacity: 100%;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,16 @@
+.app-bar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: cornflowerblue;
+    color: white;
+    margin-bottom: 2rem;
+}
+.app-bar-container{
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
