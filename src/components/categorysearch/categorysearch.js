@@ -6,7 +6,7 @@ const CategorySearch=()=>{
     const [placeholder,setPlaceholder]=useState('')
     const handleSubmit=(e)=>{
         e.preventDefault()
-        const searchTerm=e.target.elements.category.value.trim()
+        const searchTerm=e.target.elements.category.value.trim().toLowerCase()
         if (searchTerm==='') {
             setPlaceholder('Enter a valid category')
         }
