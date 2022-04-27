@@ -4,8 +4,8 @@ import { useGlobalContext } from "./context";
 import CategorySearch from "./components/categorysearch/categorysearch";
 import Pagination from "./components/pagination/pagination";
 function App() {
-  const here=useGlobalContext()
-  console.log(here)  
+
+  
 
   return (
     <>
