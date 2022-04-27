@@ -6,23 +6,25 @@ const CategorySearch=()=>{
     const [placeholder,setPlaceholder]=useState('')
     const handleSubmit=(e)=>{
         e.preventDefault()
-        const searchTerm=e.target.elements.category.value.trim().toLowerCase()
-        if (searchTerm==='') {
-            setPlaceholder('Enter a valid category')
-        }
-        else{
+        const searchTerm=e.target.elements.category.value
             setCategory(searchTerm)
             e.target.elements.category.value=''
-            setPlaceholder('Search by category')
-        }
-        
     }
     return(
         <div className="container">
         <section className="search">
         <form onSubmit={handleSubmit}>
-        <input className="input" autoFocus placeholder={placeholder}
-        type="text" name="category" />
+    
+        <select placeholder="Select a category" name="category" className="input">
+            <option value="" disabled selected hidden >Select a category</option>
+            <option value="business">Business</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="health">Health</option>
+            <option value="science">Science</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+            <option value="general">General</option>
+        </select>
         <button>Search</button>
         </form>
         </section>
